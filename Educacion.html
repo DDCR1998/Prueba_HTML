@@ -6,6 +6,7 @@
     </head>
     <body>
     <header>
+        
         <svg width="450" height="250" xmlns="http://www.w3.org/2000/svg">
          <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
          <defs>
@@ -30,8 +31,8 @@
           <path fill="#B6C7EA" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" opacity="0.5" d="m48.5,247.4375" id="svg_35"/>
           <path stroke="#000" id="svg_5" d="m30.625258,203.899096c-1.154261,-0.633905 -2.54449,-0.089616 -3.107091,1.221683c-0.560276,1.311299 -0.076718,2.887494 1.077543,3.522717c3.620871,1.99792 6.120027,6.200667 6.117702,11.071584c-0.011624,6.792399 -4.858825,12.287996 -10.848663,12.299857c-5.991001,-0.013179 -10.838202,-5.508775 -10.849826,-12.299857c-0.002325,-4.873553 2.497994,-9.080254 6.122352,-11.07422c1.156586,-0.635222 1.636657,-2.211417 1.077543,-3.522717c-0.560276,-1.308664 -1.94818,-1.856905 -3.104766,-1.221683c-5.174997,2.84005 -8.74356,8.860167 -8.745885,15.81862c0.002325,9.704934 6.938355,17.570094 15.500581,17.57273c8.561063,-0.002636 15.498256,-7.867796 15.499419,-17.57273c-0.002325,-6.955817 -3.566238,-12.97198 -8.73891,-15.815984zm-6.760508,12.960119c1.283288,0 2.323634,-1.178193 2.323634,-2.635778l0,-12.301175c0,-1.456267 -1.040346,-2.63446 -2.323634,-2.63446c-1.285612,0 -2.324797,1.179511 -2.324797,2.63446l0,12.299857c0,1.457585 1.039184,2.637096 2.324797,2.637096z" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#BF7E96"/>
          </g>
-        </svg>
-
+    </svg>
+        
         <h1>Hoja de vida</h1>
         <h2>Nombres y apellidos: Diego David Cap Rosales</h2>
         <h3>Fecha de nacimineto: 16 <em>de octubre de</em> 1,998</h3>
@@ -78,10 +79,11 @@
                 </tr>
             </tfoot>
         </table>
-
         <h3>Agregar Estudios</h3>
-        <p>
-          <select name="Año">
+        <form class="" action="index.html" method="post">
+            <p>
+        <label for="select">Año:</label>
+          <select>
             <option value="2019">2019</option>
             <option value="2018">2018</option>
             <option value="2017">2017</option>
@@ -133,15 +135,16 @@
             <option value="1971">1971</option>
             <option value="1970">1970</option>
         </select>
-        </p>
-        <form class="" action="index.html" method="post">
-            <p>
-                <label for="datoinst">Institución:</label>
-    		    <textarea name="datoinst" placeholder="Eje: Colegio..." cols="30" rows="1" required ></textarea>
             </p>
             <p>
+        		<label for="inst">Insitución: </label>
+        		<input type="text" name="inst" placeholder="Eje: Colegio..." required cols="30">
+          </p>
+            <p>
+            <p>
               <label for="lugar_donde">Lugar:</label>
-              <textarea name="lugar_donde" id="" cols="36" rows="1" ></textarea>
+              <br>
+              <textarea name="lugar_donde" cols="36" rows="2" ></textarea>
             </p>
             <p>
                   <input type="submit" value="Enviar">
